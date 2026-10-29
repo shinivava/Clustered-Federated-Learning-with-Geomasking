@@ -8,9 +8,9 @@ The implementation runs FedAvg, FedProx, IFCA, weighted/unweighted geographic cl
 
 ## Important scope and data contract
 
-The provided `data.csv` uses ECDC-style fields, not a versioned JHU CSSE snapshot. Its currently available rows and feature availability do **not** establish the manuscript claim of exactly 23,850 instances and 35 usable engineered features. The notebook reports the observed counts in `outputs/manifest.json`; do not overwrite these values in a manuscript. For a JHU-based study, adapt `load_raw_data` to an immutable JHU release and document the adapter, release date, license, and checksums.
 
-The `planar_laplace` option is a coordinate perturbation parameterized by expected displacement. This repository does not claim a global formal geo-indistinguishability guarantee. AIE/Re-ID evaluate location-derived coordination metadata only; they do not measure privacy of model updates. PMF is not included because the cited PMF paper requires a mobility model with a location-embedding risky module and personal adaptor, which this tabular classifier does not have. Substituting a generic FedAvg variant and naming it PMF would be misleading.
+
+The `planar_laplace` option is a coordinate perturbation parameterized by expected displacement. This repository does not claim a global formal geo-indistinguishability guarantee. AIE/Re-ID evaluate location-derived coordination metadata only; they do not measure privacy of model updates. 
 
 ## Run locally
 
